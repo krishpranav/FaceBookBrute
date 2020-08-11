@@ -19,7 +19,10 @@ try:
 except AttributeError:
     pass
 
-
+def author():
+    print("TOOL IS CREATED BY KRISNA PRANAV")
+    print("Github Link https://www.github.com/krishpranav")
+    print("DO NOT FORGET TO FOLLOW ME :)")
 def run(email, wordlist, agent, timeout):
     now = time.strftime("%X")
 
@@ -64,6 +67,7 @@ def run(email, wordlist, agent, timeout):
             logger.debug(msg)
             print("\033[0m")
             raise SystemExit
+            author()
 
     msg = "Password Cannot Be Founded: " + fp.name;
     logger.critical(msg)
